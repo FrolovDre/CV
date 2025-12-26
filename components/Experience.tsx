@@ -31,7 +31,7 @@ interface ExperienceItemProps {
 }
 
 function ExperienceItem({ exp, isLast }: ExperienceItemProps) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(() => exp.id === 'ibs');
   return (
     <div className="relative pl-6">
       {/* Vertical timeline marker */}
