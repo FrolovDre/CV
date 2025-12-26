@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global dark theme */
+html,
+body {
+  @apply bg-background text-white min-h-screen overflow-x-hidden;
+}
+
+/* Scrollbar styling for WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Card shadow utility */
+.card-shadow {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(40, 224, 166, 0.1);
+}
+
+/* Glow shadow used for buttons and images */
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(40, 224, 166, 0.5), 0 0 25px rgba(40, 224, 166, 0.3);
+}
+
+/* Utility for blurred panels */
+.panel-bg {
+  @apply bg-background-subtle/70 backdrop-blur-md border border-white/10 rounded-3xl shadow-inner;
+}
+
+/* Utility for tab button */
+.tab-button {
+  @apply rounded-pill px-4 py-2 text-sm font-medium transition-colors duration-200;
+}
+
+.tab-button-active {
+  @apply bg-primary/20 text-primary;
+}
+
+.tab-button-inactive {
+  @apply text-white/70 hover:text-primary hover:bg-white/5;
+}
