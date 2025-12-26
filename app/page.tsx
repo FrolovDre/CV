@@ -16,10 +16,6 @@ export default function HomePage() {
             sizes="192px"
             className="object-cover"
           />
-          {/* Small label under photo */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 rounded-pill bg-primary/30 text-xs text-white/90 backdrop-blur-sm">
-            Open to work • Product
-          </div>
         </div>
         {/* Name and role */}
         <div>
@@ -45,10 +41,6 @@ export default function HomePage() {
         <ul className="space-y-3 text-sm text-white/80">
           <li className="flex items-center gap-2">
             <span className="inline-block w-4 h-4 bg-primary/60 rounded-full"></span>
-            {profile.contact.location}
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="inline-block w-4 h-4 bg-primary/60 rounded-full"></span>
             <a href={`mailto:${profile.contact.email}`} className="hover:underline">
               {profile.contact.email}
             </a>
@@ -58,14 +50,6 @@ export default function HomePage() {
               <span className="inline-block w-4 h-4 bg-primary/60 rounded-full"></span>
               <a href={profile.contact.github} target="_blank" rel="noopener noreferrer" className="hover:underline">
                 GitHub
-              </a>
-            </li>
-          )}
-          {profile.contact.linkedin && (
-            <li className="flex items-center gap-2">
-              <span className="inline-block w-4 h-4 bg-primary/60 rounded-full"></span>
-              <a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                LinkedIn
               </a>
             </li>
           )}

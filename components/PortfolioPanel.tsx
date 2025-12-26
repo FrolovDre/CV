@@ -15,7 +15,7 @@ import Projects from './Projects';
 import Experience from './Experience';
 import Skills from './Skills';
 import Education from './Education';
-import Contact from './Contact';
+import Courses from './Courses';
 
 interface PortfolioPanelProps {
   profile: Profile;
@@ -23,15 +23,15 @@ interface PortfolioPanelProps {
 
 // Define the names and keys of tabs for easier mapping
 const tabs = [
-  { key: 'projects', label: 'Проекты' },
   { key: 'experience', label: 'Опыт' },
+  { key: 'projects', label: 'Пет-проекты' },
   { key: 'skills', label: 'Навыки' },
   { key: 'education', label: 'Образование' },
-  { key: 'contact', label: 'Контакты' }
+  { key: 'courses', label: 'Доп курсы' }
 ] as const;
 
 export default function PortfolioPanel({ profile }: PortfolioPanelProps) {
-  const [active, setActive] = useState<(typeof tabs)[number]['key']>('projects');
+  const [active, setActive] = useState<(typeof tabs)[number]['key']>('experience');
 
   return (
     <div className="panel-bg card-shadow w-full h-full flex flex-col rounded-3xl p-4 md:p-6">
@@ -65,7 +65,7 @@ export default function PortfolioPanel({ profile }: PortfolioPanelProps) {
             languages={profile.languages}
           />
         )}
-        {active === 'contact' && <Contact contact={profile.contact} />}
+        {active === 'courses' && <Courses courses={profile.courses} />}
       </div>
     </div>
   );
