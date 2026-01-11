@@ -60,7 +60,7 @@ export const profile: Profile = {
   about:
     'Выпускник МГУ и магистрант НИУ ВШЭ (бизнес‑информатика, цифровые инновации). Увлекаюсь цифровыми продуктами, которые решают реальные задачи пользователей и приносят бизнес‑ценность.',
   whatILookFor:
-    'Стажировка / Junior Product Manager, Москва. Хочу применять знания по продуктовой аналитике, управлению проектами и AI для развития цифровых продуктов.',
+    'Product Manager, Москва. Хочу применять знания по продуктовой аналитике, управлению проектами и AI для развития цифровых продуктов.',
   contact: {
     phone: '+7 (916) 923‑82‑13',
     email: '5rolov.a9dr8y@gmail.com',
@@ -75,10 +75,10 @@ export const profile: Profile = {
       problem:
         'Долго собирать и синтезировать качественные данные для продуктовых исследований (конкуренты, рынок, тренды).',
       action:
-        'Определил ключевые KPI (Time‑to‑Report, Evidence Coverage, Adoption, LLM‑cost/report), составил Lean Canvas, исследовал инструменты (Wokelo AI), на основе открытых источников и внутренней базы построил 12‑месячный roadmap MVP→scale, спроектировал Weaviate DB и multi‑LLM стек.',
+        'Определил ключевые KPI (Time‑to‑Report, Evidence Coverage, Adoption, LLM‑cost/report), составил Lean Canvas, исследовал инструменты (Wokelo AI), на основе открытых источников и внутренней базы построил 12‑месячный roadmap MVP→scale, спроектировал векторную БД и multi‑LLM стек.',
       result:
         'Определён MVP, собрана система метрик и намечен путь проверки гипотезы. Подготовлен план валидации с минимальными затратами.',
-      tools: ['Product Research', 'AI', 'Weaviate', 'LLM']
+      tools: ['Product Research', 'AI', 'LLM']
     },
     {
       slug: 'ivi-mini-dramas',
